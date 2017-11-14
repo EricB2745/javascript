@@ -1,0 +1,30 @@
+canvas {
+    border:1px solid #000000;
+}
+
+a
+{
+	font-family: Veranda, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.alable {
+
+}
+
+.alink {
+	cursor: pointer;
+	color: #0000FF;
+	font-underline: true;
+
+}
+
+.output {
+	font-family: Veranda, Arial, sans-serif;
+	font-size: .75em;
+}
+
+#divStatus {
+	font-family: Veranda, Arial, sans-serif;
+	font-size: .5em;
+}

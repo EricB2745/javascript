@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Optics</title>
+		<link rel="stylesheet" type="text/css" href="optics.css"  />
+		<script type="text/javascript" src="optics.js" ></script>
+		<script type="text/javascript" src="optics_focal_point.js" ></script>
+	</head>
+	<body onload="page_onload()">
+		<table>
+			<tr>
+				<td valign="top">
+					<table>
+						<tr><td colspan="3"> <a class="alable">Prescription</a></td><tr>
+						<tr>
+							<td><input onKeyUp="sphere_keypress()" id="txtSphere"></td>
+							<td><input onKeyUp="cylinder_keypress()" id="txtCylinder"></td>
+							<td><input onKeyUp="axis_keypress()" id="txtAxis"></td>
+						</tr>
+						<tr><td colspan="3"><div id="divOutput1" class="output"/></td></tr>						
+					</table
+				</td>
+				<td>
+					<canvas id="canvas1" class="canvas" width="400" height="400" />
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<a class="alable">Sphere Eye Power</a>
+					<div id="divOutput2" class="output"/>
+				</td>
+				<td valign="top">
+					<canvas id="canvas2" class="canvas" width="400" height="200" onmousedown="canvas2_mousedown()"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a class="output">Adjust manually by clicking mouse over focal point</a></td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<a class="alable">Cylinder Eye Power</a>
+					<div id="divOutput3" class="output"/>
+				</td>
+				<td valign="top">
+					<canvas id="canvas3" class="canvas" width="400" height="200" onmousedown="canvas3_mousedown()"/>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<div id="divStatus" position="relative" valign="bottom"/>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+
+	</body>
+</html>
